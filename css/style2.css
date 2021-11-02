@@ -1,0 +1,29 @@
+* {
+    color: #19345E;
+    font-family: 'Roboto', sans-serif;
+}
+.form-grup {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.form-grup input {
+    margin-top: 40px;
+}
+.image-form {
+    width: 100%;
+    min-height: 700px;
+    background-image: url('../img/charles-rRWiVQzLm7k-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-fill {
+    width: 100%;
+    background-color: #19345E;
+    opacity: 65%;
+    padding: 30%;
+}
+.image-logo {
+    padding-top: 80px;  
+    padding-bottom: 230px;
+}

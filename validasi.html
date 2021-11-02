@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styleValidation.css">
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row my-row-top">
+            <div class="box-descript m-auto">
+                <div class="box-content">
+                    <table style="padding: 10px;">
+                        <tr>
+                            <td style="padding-right: 100px;">Full Name</td>
+                            <td>:</td>
+                            <td id="nameValues"></td>
+                        </tr>
+                        <tr>
+                            <td>Email Adress</td>
+                            <td>:</td>
+                            <td id="emailValues"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number</td>
+                            <td>:</td>
+                            <td id="phoneValues"></td>
+                        </tr>
+                        <tr>
+                            <td>Nationality</td>
+                            <td>:</td>
+                            <td id="nationalityValues"></td>
+                        </tr>
+                    </table>
+                    <div class="box-description fst-italic" id="messageValues">
+
+                    </div>
+                    <hr class="hr-custom">
+                    <br>
+                    <h4 class="tex-bottom">
+                        Thanks for contacting us! We will be in touch with you shortly.
+                    </h4>
+                    <br>
+                    <form action="home.html">
+                        <button type="submit"  class="btn rounded-pill px-4 py-2 font-weight-normal" style="background-color: #F47522; color: #ffff;">Home</button>
+                    </form>
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="row my-row-bot">
+            <div class="col-6 text-center">
+                <img src="img/img-dot.png" alt="dot" class="img-dot">
+            </div>
+            <div class="col-6">
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('nameValues').innerHTML = localStorage.getItem('nameValue');
+        document.getElementById('emailValues').innerHTML = localStorage.getItem('emailValue');
+        document.getElementById('phoneValues').innerHTML = localStorage.getItem('phoneNumValue');
+        document.getElementById('nationalityValues').innerHTML = localStorage.getItem('nationalityValue');
+        document.getElementById('messageValues').innerHTML = localStorage.getItem('messageValue');
+    </script>
+  </body>
+</html>
